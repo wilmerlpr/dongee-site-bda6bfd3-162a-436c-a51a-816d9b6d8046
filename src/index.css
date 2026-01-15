@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/40 shadow-xl;
+  }
+  .glass-dark {
+    @apply bg-gray-900/80 backdrop-blur-md border border-gray-700/50 shadow-xl;
+  }
+}
+
+body {
+  background-color: #fff7ed;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(27,96%,80%,0.2) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(170,72%,78%,0.2) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(27,96%,80%,0.2) 0px, transparent 50%);
+  background-attachment: fixed;
+}
